@@ -57,7 +57,7 @@ navigator.serviceWorker.addEventListener('message', event => {
 
 function showUpdateNotification() {
   const banner = document.createElement('div');
-  banner.textContent = '새 버전이 있습니다. 새로고침하세요!';
+  banner.textContent = '새 버전이 있습니다. 새로고침하세요!(Press F5 to refresh)';
   banner.style.cssText = 'position:fixed;bottom:0;width:100%;background:#333;color:#fff;padding:10px;text-align:center;';
   document.body.appendChild(banner);
 }
