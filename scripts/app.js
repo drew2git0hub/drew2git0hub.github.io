@@ -5,6 +5,7 @@ const translations = {
     memo: "Memo",
     camera: "Camera",
     calendar: "Calendar",
+    calculator: "Calculator",
     github: "Github profile"
   },
   ko: {
@@ -13,6 +14,7 @@ const translations = {
     memo: "메모",
     camera: "카메라",
     calendar: "캘린더",
+    calculator: "계산기",
     github: "깃허브 프로필"
   }
 };
@@ -24,7 +26,8 @@ function setLanguage(lang) {
   btns[0].textContent = translations[lang].memo;
   btns[1].textContent = translations[lang].camera;
   btns[2].textContent = translations[lang].calendar;
-  btns[3].textContent = translations[lang].github;
+  btns[3].textContent = translations[lang].calculator;
+  btns[4].textContent = translations[lang].github;
 }
 
 document.getElementById('lang-select').addEventListener('change', function(e) {
